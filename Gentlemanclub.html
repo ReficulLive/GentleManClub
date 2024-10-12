@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentleman Club</title>
+    <style>
+       /* Default styles for desktop screens */
+body {
+  font-family: "Comic Sans MS", sans-serif;
+  margin: 1;
+  padding: 1;
+  background-color: #e00d0dc5; /* Světle šedé pozadí */
+  background-image: url('https://media.tenor.com/L0Ve23CmCn8AAAAM/girl-dance.gif'); /* Pozadí z vašeho PC */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: center; /* Center the background image */
+  overscroll-behavior-block: ;
+  {
+    
+  } /* Pokrýt celé pozadí */
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(143, 131, 0, 0.379); /* Poloprůhledné modré pozadí */
+  color: rgba(255, 255, 255, 0.71);
+  position: relative; /* Add relative positioning to header */
+}
+
+.contact {
+  position: absolute; /* Add absolute positioning to contact section */
+  top: 5px;
+  left: 0px;
+}
+
+.address {
+  position: absolute; /* Add absolute positioning to address section */
+  top: 5px;
+  right: 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo {
+  margin: 10px;
+  border: 2px solid #ddd; /* Světle šedý rámeček */
+  border-radius: 10px; /* Zaoblené rohy */
+  overflow: hidden; /* Skrytí přetečení */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stín */
+  transition: transform 0.2s; /* Efekt zvětšení */
+  width: 175px; /* Šířka kontejneru */
+  height: 175px; /* Výška kontejneru */
+}
+
+.photo:hover {
+  transform: scale(1.50); /* Zvětšení při najetí myší */
+}
+
+.photo img {
+  width: 80%; /* Šířka obrázku 100% kontejneru */
+  height: 100%; /* Výška obrázku 100% kontejneru */
+  object-fit: cover; /* Make the image fit the container */
+}
+
+.photo p {
+  font-size: 10px; /* Velikost písma */
+  margin: 0px; /* Odsazení */
+}
+
+.pravy-roh {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.levy-roh {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.obrazek:hover {
+  transform: scale(1.35);
+}
+
+/* Media query for tablet screens (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    resize: unset;
+  }
+  .photo {
+    width: 40%;
+    height: 40%;
+  }
+  .pravy-roh, .levy-roh {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    left: auto;
+  }
+}
+
+/* Media query for mobile screens (max-width: 680px) */
+@media only screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    resize: unset;
+  }
+  .photo {
+    width: 80%;
+    height: 80%;
+  }
+  .pravy-roh, .levy-roh {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    left: auto;
+  }
+
+  .text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.phonetext {
+  margin-left: left;
+  margin-right: right;
+  text-align: center;
+  font-size: 15px;
+  visibility: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contact">
+            <p>Telefon:+420 704 119 118</p>
+        </div>
+        <div class="address">
+            <p>Adresa:Libušská 46/186 Praha</p>
+        </div>
+        <h1>Vítejte</h1>
+        <p>Podívejte se jak to u nás vypadá.</p>
+    </header>
+    <div class="container">
+        <div class="photo">
+            <img src="images/4.jpg" alt="">
+            <p></p>
+        </div>
+        <div class="photo">
+            <img src="images/1.jpg" alt="">
+            <p></p>
+        </div>
+        <div class="photo">
+            <img src="images/2.jpg" alt="">
+            <p></p>
+        </div>
+        <div class="photo">
+            <img src="images/23.jpg" alt="">
+            <p></p>
+        </div>
+            <div class="photo">
+                <img src="images/18.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="photo">
+                <img src="images/17.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="photo">
+                <img src="images/20.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="photo">
+                <img src="images/9.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="photo">
+                <img src="images/17.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="photo">
+                <img src="images/16.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="photo">
+                <img src="images/3.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="photo">
+                <img src="images/15.jpg" alt="">
+                <p></p>
+            </div>
+    
+            <div>
+                <img src="images/25.jpg" alt="Nápojový lístek" class="obrazek">
+                <p>Něco k pití.</p>
+            </div>
+    
+            <div class="pravy-roh">
+                <div class="text"<H3>Neváhejte nám zavolat a klidně přijít i bez zavolání</H3></div>
+                <span style="font-size: 12px; color: #666;"></span>
+                <span style="font-size: 12px; color: #666;"></span>
+            </div>
+            <div class="pravy-roh">
+              <div class="phonetext"<H3>Neváhejte nám zavolat a klidně přijít i bez zavolání</H3></div>
+              <span style="font-size: 12px; color: #666;"></span>
+              <span style="font-size: 12px; color: #666;"></span>
+          </div>
+            <div class="levy-roh">
+                <div class="text"<h3>Telefon: +420 704 119 118</h3></div>
+                <div class="text"<h3>Adresa: Libušská 46/186 Praha</h3></body></div>
+                <span style="font-size: 12px; color: #666;"></span>
+                <span style="font-size: 12px; color: #666;"></span>
+            </div>
+    
+            <div class="levy-roh">
+              <div class="phonetext"<h3>Telefon: +420 704 119 118</h3></div>
+              <div class="phonetext"<h3>Adresa: Libušská 46/186 Praha</h3></body></div>
+              <span style="font-size: 12px; color: #666;"></span>
+              <span style="font-size: 12px; color: #666;"></span>
+          </div>
+
+        </div>
+    </body>
+    </html>
